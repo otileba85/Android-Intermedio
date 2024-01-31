@@ -24,5 +24,5 @@ El temario del curso será:
 - UnitTest y UITest
 
 ## Preguntas habituales
-* **?Cuando seran las clases?**
-    * Como norma general seerna os martes*
+* **Cuando seran las clases?**
+    * Como norma general seran los martes
