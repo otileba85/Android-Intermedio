@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.abel.horoscapp.R
 import com.abel.horoscapp.domain.model.HoroscopeInfo
 
-class HoroscopeAdapter(private var horoscopelist: List<HoroscopeInfo> = emptyList(),
+class HoroscopeAdapter   (private var horoscopelist: List<HoroscopeInfo> = emptyList(),
     private val onItemSelected:(HoroscopeInfo)-> Unit) :
     RecyclerView.Adapter<HoroscopeViewHolder>() {
 
