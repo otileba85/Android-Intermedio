@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.activity.viewModels
+import androidx.navigation.navArgs
 import com.abel.horoscapp.R
 import com.abel.horoscapp.databinding.ActivityHoroscopeDetailBinding
 import com.abel.horoscapp.databinding.ActivityMainBinding
@@ -14,10 +15,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class HoroscopeDetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHoroscopeDetailBinding
-    private val horoscopeDetailViewmodel:HoroscopeDetailViewModel by viewModels()
+    private val horoscopeDetailViewModel:HoroscopeDetailViewModel by viewModels()
+    private val args:HoroscopeDetailActivityArgs by navArgs()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHoroscopeDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        args.type
     }
 }
