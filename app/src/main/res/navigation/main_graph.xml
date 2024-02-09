@@ -11,7 +11,7 @@
         android:label="fragment_horoscope"
         tools:layout="@layout/fragment_horoscope">
         <action
-            android:id="@+id/action_horoscopeFragment_to_horoscopeDetailActivity"
+            android:id="@+id/action_horoscopeFragment_to_horoscopeDetailActivity3"
             app:destination="@id/horoscopeDetailActivity" />
     </fragment>
     <fragment
@@ -29,6 +29,7 @@
         android:name="com.abel.horoscapp.ui.detail.HoroscopeDetailActivity"
         android:label="activity_horoscope_detail"
         tools:layout="@layout/activity_horoscope_detail" >
+
         <argument
             android:name="type"
             app:argType="com.abel.horoscapp.domain.model.HoroscopeModel" />

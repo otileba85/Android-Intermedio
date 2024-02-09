@@ -1,11 +1,9 @@
 package com.abel.horoscapp.ui.horoscope
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -37,13 +35,13 @@ class HoroscopeFragment : Fragment() {
     }
 
     private fun initUI() {
-        initList_Adapter()
+        initListAdapter()
         initUIState()
     }
 
-    private fun initList_Adapter() {
+    private fun initListAdapter() {
         horoscopeAdapter = HoroscopeAdapter(onItemSelected = {
-            val type: HoroscopeModel = when (it) {
+            val type = when (it) {
                 Aquarius -> HoroscopeModel.Aquarius
                 Aries -> HoroscopeModel.Aries
                 Cancer -> HoroscopeModel.Cancer
@@ -58,7 +56,7 @@ class HoroscopeFragment : Fragment() {
                 Virgo -> HoroscopeModel.Virgo
             }
             findNavController().navigate(
-                HoroscopeFragmentDirections.actionHoroscopeFragmentToHoroscopeDetailActivity(type)
+                HoroscopeFragmentDirections.actionHoroscopeFragmentToHoroscopeDetailActivity3(type)
             )
         })
         binding.rvHoroscope.apply {

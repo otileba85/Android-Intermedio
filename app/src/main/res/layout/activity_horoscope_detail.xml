@@ -53,6 +53,7 @@
                     nf shg fg ugh g " />
 
     <ProgressBar
+        android:id="@+id/pbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:indeterminateTint="@color/gold"
