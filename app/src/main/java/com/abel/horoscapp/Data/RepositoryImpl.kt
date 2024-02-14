@@ -2,10 +2,8 @@ package com.abel.horoscapp.Data
 
 import android.util.Log
 import com.abel.horoscapp.Data.network.HoroscopeApiService
-import com.abel.horoscapp.Data.network.response.PredictionResponse
 import com.abel.horoscapp.domain.Repository
 import com.abel.horoscapp.domain.model.PredictionModel
-import retrofit2.Retrofit
 import javax.inject.Inject
 
 class RepositoryImpl @Inject constructor(private val apiService: HoroscopeApiService) : Repository {
